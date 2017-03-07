@@ -5,7 +5,7 @@ defmodule Exchatwork.Mixfile do
     [app: :exchatwork,
      version: "0.1.0",
      elixir: "~> 1.4",
-     description: "ChatWork API Interface for Elixir"
+     description: "ChatWork API Interface for Elixir",
      package: [
        maintainers: ["alea12"],
        licenses: ["MIT"],
@@ -34,6 +34,6 @@ defmodule Exchatwork.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:ex_doc, "~> 0.14", only: :dev, runtime: false}]
   end
 end
