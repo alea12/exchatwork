@@ -1,6 +1,6 @@
-defmodule ExchatworkTest do
+defmodule ExChatworkTest do
   use ExUnit.Case
-  doctest Exchatwork
+  doctest ExChatwork
 
   test "the truth" do
     assert 1 + 1 == 2
