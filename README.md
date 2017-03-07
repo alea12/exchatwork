@@ -1,4 +1,4 @@
-# ExChatwork
+# ExChatwork [![hex.pm version](https://img.shields.io/hexpm/v/exchatwork.svg)](https://hex.pm/packages/exchatwork)
 
 ChatWork API Interface for Elixir.
 
@@ -23,11 +23,58 @@ iex> response.headers
 iex> response.body
 ```
 
+## Implement Progress
+
+### /rooms
+
+|Method|Endpoint                              |Implemented Version                                              |
+|------|--------------------------------------|-----------------------------------------------------------------|
+|GET   |/rooms                                |[0.1.0](https://github.com/alea12/exchatwork/releases/tag/v0.1.0)|
+|POST  |/rooms                                |                                                                 |
+|GET   |/rooms/{room_id}                      |                                                                 |
+|PUT   |/rooms/{room_id}                      |                                                                 |
+|DELETE|/rooms/{room_id}                      |                                                                 |
+|GET   |/rooms/{room_id}/members              |                                                                 |
+|PUT   |/rooms/{room_id}/members              |                                                                 |
+|GET   |/rooms/{room_id}/messages             |                                                                 |
+|POST  |/rooms/{room_id}/messages             |                                                                 |
+|GET   |/rooms/{room_id}/messages/{message_id}|                                                                 |
+|GET   |/rooms/{room_id}/tasks                |                                                                 |
+|POST  |/rooms/{room_id}/tasks                |                                                                 |
+|GET   |/rooms/{room_id}/tasks/{task_id}      |                                                                 |
+|GET   |/rooms/{room_id}/files                |                                                                 |
+|GET   |/rooms/{room_id}/files/{file_id}      |                                                                 |
+
+### /me
+
+|Method|Endpoint                              |Implemented Version                                              |
+|------|--------------------------------------|-----------------------------------------------------------------|
+|GET   |/me                                   |                                                                 |
+
+### /my
+
+|Method|Endpoint                              |Implemented Version                                              |
+|------|--------------------------------------|-----------------------------------------------------------------|
+|GET   |/my/status                            |                                                                 |
+|GET   |/my/tasks                             |                                                                 |
+
+### /contacts
+
+|Method|Endpoint                              |Implemented Version                                              |
+|------|--------------------------------------|-----------------------------------------------------------------|
+|GET   |/contacts                             |                                                                 |
+
+### /incoming_requests
+
+|Method|Endpoint                              |Implemented Version                                              |
+|------|--------------------------------------|-----------------------------------------------------------------|
+|GET   |/incoming_requests                    |                                                                 |
+|PUT   |/incoming_requests/{request_id}       |                                                                 |
+|DELETE|/incoming_requests/{request_id}       |                                                                 |
+
 ## Docs
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/exchatwork](https://hexdocs.pm/exchatwork).
+[API Reference – exchatwork v0\.1\.0](https://hexdocs.pm/exchatwork/api-reference.html)
 
 ## License
 
