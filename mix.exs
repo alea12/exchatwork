@@ -1,4 +1,4 @@
-defmodule Exchatwork.Mixfile do
+defmodule ExChatwork.Mixfile do
   use Mix.Project
 
   def project do
@@ -34,6 +34,10 @@ defmodule Exchatwork.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:ex_doc, "~> 0.14", only: :dev, runtime: false}]
+    [
+      {:ex_doc, "~> 0.14", only: :dev, runtime: false},
+      {:exjsx, "~> 3.0"},
+      {:httpoison, "~> 0.5"}
+    ]
   end
 end
