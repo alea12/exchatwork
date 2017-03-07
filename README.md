@@ -1,4 +1,4 @@
-# ExChatwork [![hex.pm version](https://img.shields.io/hexpm/v/exchatwork.svg)](https://hex.pm/packages/exchatwork)
+# ExChatwork [![hex.pm version](https://img.shields.io/hexpm/v/exchatwork.svg)](https://hex.pm/packages/exchatwork) [![travis.ci build status](https://img.shields.io/travis/alea12/exchatwork.svg)](https://travis-ci.org/alea12/exchatwork)
 
 ChatWork API Interface for Elixir.
 
