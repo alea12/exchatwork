@@ -5,6 +5,12 @@ defmodule Exchatwork.Mixfile do
     [app: :exchatwork,
      version: "0.1.0",
      elixir: "~> 1.4",
+     description: "ChatWork API Interface for Elixir"
+     package: [
+       maintainers: ["alea12"],
+       licenses: ["MIT"],
+       links: %{"GitHub" => "https://github.com/alea12/exchatwork"}
+     ],
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
