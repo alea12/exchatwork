@@ -1,6 +1,6 @@
-# Exchatwork
+# ExChatwork
 
-**TODO: Add description**
+ChatWork API Interface for Elixir.
 
 ## Installation
 
