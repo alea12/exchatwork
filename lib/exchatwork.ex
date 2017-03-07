@@ -1,18 +1,22 @@
-defmodule Exchatwork do
+defmodule ExChatwork do
   @moduledoc """
-  Documentation for Exchatwork.
+  ChatWork API Interface for Elixir.
   """
 
+  defmodule Response do
+    defstruct status_code: nil, body: nil, headers: %{}
+  end
+
   @doc """
-  Hello world.
+  GET /rooms
 
   ## Examples
 
-      iex> Exchatwork.hello
-      :world
+      ExChatwork.get_rooms("YOUR_API_KEY")
 
+  ## Reference
+  http://developer.chatwork.com/ja/endpoint_rooms.html#GET-rooms
   """
-  def hello do
-    :world
-  end
+  @spec get_rooms(Keyword.t) :: ExChatwork.Response
+  defdelegate get_rooms(token), to: ExChatwork.API.Rooms
 end
