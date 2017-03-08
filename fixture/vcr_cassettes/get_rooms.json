@@ -1,0 +1,30 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "X-ChatWorkToken": "***"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.chatwork.com/v2/rooms"
+    },
+    "response": {
+      "body": "[{\"room_id\":\"<REMOVED>\",\"name\":\"<REMOVED>\",\"type\":\"my\",\"role\":\"member\",\"sticky\":true,\"unread_num\":0,\"mention_num\":0,\"mytask_num\":0,\"message_num\":1,\"file_num\":0,\"task_num\":0,\"icon_path\":\"<REMOVED>\",\"last_update_time\":1484639982},{\"room_id\":\"<REMOVED>\",\"name\":\"<REMOVED>\",\"type\":\"group\",\"role\":\"member\",\"sticky\":false,\"unread_num\":134,\"mention_num\":0,\"mytask_num\":0,\"message_num\":209,\"file_num\":18,\"task_num\":2,\"icon_path\":\"<REMOVED>\",\"last_update_time\":1488809052},{\"room_id\":\"<REMOVED>\",\"name\":\"<REMOVED>\",\"type\":\"direct\",\"role\":\"member\",\"sticky\":false,\"unread_num\":1,\"mention_num\":0,\"mytask_num\":0,\"message_num\":27,\"file_num\":0,\"task_num\":0,\"icon_path\":\"<REMOVED>\",\"last_update_time\":1485834914}]",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 08 Mar 2017 02:45:49 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding,User-Agent",
+        "X-RateLimit-Limit": "100",
+        "X-RateLimit-Remaining": "97",
+        "X-RateLimit-Reset": "1488941235",
+        "Content-Length": "981",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
