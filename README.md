@@ -15,12 +15,16 @@ end
 
 ## Usage
 
+```bash
+$ export CHATWORK_API_TOKEN=YOUR_CHATWORK_API_TOKEN
+```
+
 ```elixir
 $ iex -S mix
-iex> response = ExChatwork.get_rooms("YOUR_API_KEY")
-iex> response.status_code
-iex> response.headers
+iex> response = ExChatwork.get_rooms
 iex> response.body
+iex> response.headers
+iex> response.status_code
 ```
 
 ## Implement Progress
