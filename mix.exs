@@ -37,7 +37,8 @@ defmodule ExChatwork.Mixfile do
     [
       {:ex_doc, "~> 0.14", only: :dev, runtime: false},
       {:exjsx, "~> 3.0"},
-      {:httpoison, "~> 0.5"}
+      {:httpoison, "~> 0.5"},
+      {:exvcr, "~> 0.8", only: :test}
     ]
   end
 end
