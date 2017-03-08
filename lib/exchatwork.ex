@@ -17,6 +17,6 @@ defmodule ExChatwork do
   ## Reference
   http://developer.chatwork.com/ja/endpoint_rooms.html#GET-rooms
   """
-  @spec get_rooms(Keyword.t) :: ExChatwork.Response
-  defdelegate get_rooms(token), to: ExChatwork.API.Rooms
+  @spec get_rooms :: ExChatwork.Response
+  defdelegate get_rooms, to: ExChatwork.API.Rooms
 end

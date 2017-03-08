@@ -5,7 +5,7 @@ defmodule ExChatwork.API.Rooms do
 
   import ExChatwork.API.Base
 
-  def get_rooms(token, params \\ %{}, headers \\ %{}) do
-    get(token, "rooms", params, headers)
+  def get_rooms do
+    get("rooms")
   end
 end

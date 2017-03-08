@@ -4,15 +4,15 @@ defmodule ExChatwork.API.Base do
   @doc """
   Sends API request and returns ExChatwork.Response
   """
-  def request(token, method, path, params \\ %{}, headers \\ %{}) do
-    headers = headers |> Map.put("X-ChatWorkToken", token)
+  def request(method, path, params \\ %{}, headers \\ %{}) do
+    headers = headers |> Map.put("X-ChatWorkToken", Application.get_env(:exchatwork, :api_token))
     case method do
       :get ->
-        url = process_url(path) <> URI.encode_query(params)
+        url = process_endpoint_url(path) <> URI.encode_query(params)
         body = ""
         HTTPoison.request!(:get, url, body, headers) |> response
       :post ->
-        url = process_url(path)
+        url = process_endpoint_url(path)
         body = JSX.encode!(params)
         HTTPoison.request!(:post, url, body, headers) |> response
     end
@@ -21,12 +21,12 @@ defmodule ExChatwork.API.Base do
   @doc """
   Sends GET API request
   """
-  def get(token, path, params \\ %{}, headers \\ %{}) do
-    request(token, :get, path, params)
+  def get(path, params \\ %{}, headers \\ %{}) do
+    request(:get, path, params, headers)
   end
 
-  defp process_url(url) do
-    "https://api.chatwork.com/v2/#{url}"
+  defp process_endpoint_url(path) do
+    Application.get_env(:exchatwork, :endpoint_base_uri) <> path
   end
 
   defp response(response) do
