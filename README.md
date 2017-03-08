@@ -1,4 +1,4 @@
-# ExChatwork [![hex.pm version](https://img.shields.io/hexpm/v/exchatwork.svg)](https://hex.pm/packages/exchatwork) [![travis.ci build status](https://img.shields.io/travis/alea12/exchatwork.svg)](https://travis-ci.org/alea12/exchatwork)
+# ExChatwork [![hex.pm version](https://img.shields.io/hexpm/v/exchatwork.svg)](https://hex.pm/packages/exchatwork) [![travis.ci build status](https://img.shields.io/travis/alea12/exchatwork.svg)](https://travis-ci.org/alea12/exchatwork) [![Coverage Status](https://coveralls.io/repos/github/alea12/exchatwork/badge.svg?branch=master)](https://coveralls.io/github/alea12/exchatwork?branch=master)
 
 ChatWork API Interface for Elixir.
 
